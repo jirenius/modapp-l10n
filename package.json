@@ -1,0 +1,25 @@
+{
+  "name": "modapp-l10n",
+  "version": "1.0.0",
+  "description": "Localization utility implementing modapp's model interface.",
+  "main": "./index.js",
+  "scripts": {
+    "build": "babel src --out-dir ./",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jirenius/modapp-l10n"
+  },
+  "author": "Samuel Jirénius <samuel@jirenius.se>",
+  "license": "MIT",
+  "homepage": "https://github.com/jirenius/modapp-l10n",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.3.0"
+  },
+  "dependencies": {
+    "modapp": "^2.1.2"
+  }
+}
