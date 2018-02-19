@@ -49,6 +49,6 @@ alert(l10n.t('example.variadicParameters', "{0} of {1} parameters.", "An example
 
 ## Disclaimer
 
-This package is not complete, but works as a placeholder until the real implementation is complete. Source code using this package will prepare for localization.
+**This package is not complete**, but works as a placeholder until the real implementation is complete. Source code using this package will prepare for localization.
 
 Once the implementation is finished, this package will of course support loading of locales, and using the [ICU Message Format](http://userguide.icu-project.org/formatparse/messages) for placeholders.
