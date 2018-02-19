@@ -157,11 +157,9 @@ class L10n {
 	 * @param {*} str
 	 */
 	isLocaleString(str) {
-		return Object.prototype.hasOwnProperty.call(str, 'translationKey') &&
+		return str && typeof str === 'object' &&
 			typeof str.translationKey === 'function' &&
-			Object.prototype.hasOwnProperty.call(str, 'defaultStr') &&
 			typeof str.defaultStr === 'function' &&
-			Object.prototype.hasOwnProperty.call(str, 'defaultParams') &&
 			typeof str.defaultParams === 'function';
 	}
 }
