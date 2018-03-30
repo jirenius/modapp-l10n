@@ -4,22 +4,27 @@
   "description": "Localization utility implementing modapp's model interface.",
   "main": "./index.js",
   "scripts": {
-    "build": "babel src --out-dir ./",
-    "test": "jest --coverage"
+    "build": "npm run clean && npm run eslint && npm run docs && npm run babel",
+    "babel": "babel src --out-dir ./",
+    "clean": "rimraf class && rimraf docs/* && rimraf interface && rimraf *.js",
+    "docs": "jsdoc2md -f ./src/class/L10n.js -f ./src/interface/LocaleString.js > ./docs/docs.md",
+    "eslint": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jirenius/modapp-l10n"
   },
-  "author": "Samuel Jirénius <samuel@jirenius.se>",
+  "author": "Samuel Jirénius <samuel@jirenius.com>",
   "license": "MIT",
   "homepage": "https://github.com/jirenius/modapp-l10n",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "jest": "^22.4.2"
+    "eslint": "^4.19.1",
+    "jsdoc-to-markdown": "^4.0.1",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "modapp": "^2.1.2"
+    "modapp": "^2.2.0"
   }
 }

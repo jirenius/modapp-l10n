@@ -1,9 +1,13 @@
 /node_modules
 /coverage
 /package-lock.json
+/yarn.lock
 
 # Build files.
-# Put in root folder
 /class
 /interface
 /*.js
+/*.tgz
+
+# Editor specifics
+.vscode/*

@@ -1,4 +1,4 @@
-import LocaleString from './LocaleString.js';
+import LocaleStr from './LocaleStr.js';
 
 /**
  * L10n handles localization and translation
@@ -75,6 +75,7 @@ class L10n {
 	 * @param {string} key Key id of string to translate.
 	 * @param {string} defaultStr Default string translation.
 	 * @param {object} [defaultParams] Default parameters.
+	 * @returns {LocaleString} LocaleString
 	 */
 	l(key, defaultStr, defaultParams) {
 		if (this.isLocaleString(key)) {
@@ -95,7 +96,7 @@ class L10n {
 			}
 		}
 
-		return new LocaleString(this._ns + key, defaultStr, defaultParams);
+		return new LocaleStr(this._ns + key, defaultStr, defaultParams);
 	}
 
 	/**
@@ -153,8 +154,9 @@ class L10n {
 	}
 
 	/**
-	 * Checks if a value implements {@link ILocaleString}.
-	 * @param {*} str
+	 * Checks if a value implements {@link LocaleString}.
+	 * @param {*} str Value to check
+	 * @returns {boolean} True if the string implements LocaleString interface, otherwise false.
 	 */
 	isLocaleString(str) {
 		return str && typeof str === 'object' &&

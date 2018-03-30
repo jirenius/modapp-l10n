@@ -1,13 +1,13 @@
 /**
  * Locale string storing the string key and the default string.<br>
  * Use {@link L10n#l} to create new instances instead as it will ensure
- * the LocaleString key is prefixed with the correct namespace.
- * @implements {ILocaleString}
+ * the LocaleStr key is prefixed with the correct namespace.
+ * @implements {LocaleString}
  */
-class LocaleString {
+class LocaleStr {
 
 	/**
-	 * Creates a LocaleString
+	 * Creates a LocaleStr instance
 	 * @param {string} key Translation key of the string.
 	 * @param {string} defaultStr Default string tranlation.
 	 * @param {object} [defaultParams] Default string translation parameters.
@@ -45,4 +45,4 @@ class LocaleString {
 	}
 }
 
-export default LocaleString;
+export default LocaleStr;

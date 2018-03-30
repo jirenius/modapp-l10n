@@ -47,8 +47,12 @@ alert(l10n.t(str3, {name: "translation"}));
 alert(l10n.t('example.variadicParameters', "{0} of {1} parameters.", "An example", "variadic"));
 ```
 
+## Documentation
+
+[Markdown documentation](https://github.com/jirenius/modapp-l10n/blob/master/docs/docs.md)
+
 ## Disclaimer
 
-**This package is not complete**, but works as a placeholder until the real implementation is complete. Source code using this package will prepare for localization.
+**This package is not complete**, but works as a placeholder until the real implementation is finalized. Source code using this package will be prepared for localization.
 
 Once the implementation is finished, this package will of course support loading of locales, and using the [ICU Message Format](http://userguide.icu-project.org/formatparse/messages) for placeholders.
