@@ -1,6 +1,6 @@
 {
   "name": "modapp-l10n",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Localization utility implementing modapp's model interface.",
   "main": "lib/index.js",
   "module": "es/index.js",
