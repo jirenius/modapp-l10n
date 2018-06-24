@@ -2,14 +2,8 @@
  * Localization utility implementing modapp's model interface.
  */
 
-import L10nImport from './class/L10n.js';
-import eventBus from 'modapp/eventBus.js';
-
-/**
- * L10n class.
- * @type {L10n}
- */
-let L10n = L10nImport;
+import L10n from './class/L10n.js';
+import { eventBus } from 'modapp';
 
 /**
  * L10n instance using the {@link module:modapp/eventBus} to emit locale changes.
