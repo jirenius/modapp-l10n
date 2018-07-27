@@ -1,7 +1,7 @@
 [![view on npm](http://img.shields.io/npm/v/modapp-l10n.svg)](https://www.npmjs.org/package/modapp-l10n)
 
 # ModApp Localization
-Localization utility implementing modapp's model interface, using modapp's eventBus.
+Localization utility implementing modapp's [LocaleString interface](https://github.com/jirenius/modapp/blob/master/docs/docs.md#LocaleString), using modapp's eventBus.
 
 ## Installation
 
