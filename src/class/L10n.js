@@ -96,7 +96,7 @@ class L10n {
 			}
 		}
 
-		return new LocaleStr(this._ns + key, defaultStr, defaultParams);
+		return new LocaleStr(this, this._ns + key, defaultStr, defaultParams);
 	}
 
 	/**
