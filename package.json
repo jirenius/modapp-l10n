@@ -1,7 +1,7 @@
 {
   "name": "modapp-l10n",
-  "version": "1.3.0",
-  "description": "Localization utility implementing modapp's model interface.",
+  "version": "1.7.0",
+  "description": "Localization utility implementing modapp's LocaleString interface.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -16,7 +16,7 @@
     "build": "npm run clean && npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min && npm run build:docs",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
-    "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development node_modules/.bin/rollup src/index.js --config --sourcemap --file dist/modapp-l10n.js",
+    "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development rollup src/index.js --config --sourcemap --file dist/modapp-l10n.js",
     "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup src/index.js --config --file dist/modapp-l10n.min.js",
     "build:docs": "jsdoc2md -f ./src/class/L10n.js -f ./src/interface/LocaleString.js > ./docs/docs.md",
     "eslint": "eslint src/**/*.js",
@@ -30,20 +30,18 @@
   "license": "MIT",
   "homepage": "https://github.com/jirenius/modapp-l10n",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-env": "^1.7.0",
-    "cross-env": "^5.2.0",
-    "eslint": "^4.19.1",
-    "jsdoc-to-markdown": "^4.0.1",
-    "rimraf": "^2.6.2",
-    "rollup": "^0.60.7",
-    "rollup-plugin-babel": "^3.0.7",
-    "rollup-plugin-commonjs": "^9.1.4",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-uglify": "^4.0.0"
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@rollup/plugin-babel": "^5.2.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.13.0",
+    "jsdoc-to-markdown": "^6.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.33.1",
+    "rollup-plugin-terser": "^6.1.0"
   },
   "dependencies": {
-    "modapp": "^2.3.3"
+    "modapp-eventbus": "^1.7.0"
   }
 }
