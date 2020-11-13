@@ -1,7 +1,7 @@
 {
   "name": "modapp-l10n",
-  "version": "1.3.0",
-  "description": "Localization utility implementing modapp's model interface.",
+  "version": "1.7.0",
+  "description": "Localization utility implementing modapp's LocaleString interface.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
