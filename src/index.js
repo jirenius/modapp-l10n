@@ -3,7 +3,7 @@
  */
 
 import L10n from './class/L10n.js';
-import { eventBus } from 'modapp';
+import eventBus from 'modapp-eventbus';
 
 /**
  * L10n instance using the {@link module:modapp/eventBus} to emit locale changes.
