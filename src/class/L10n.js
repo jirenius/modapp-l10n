@@ -79,10 +79,8 @@ class L10n {
 	 */
 	l(key, defaultStr, defaultParams) {
 		if (this.isLocaleString(key)) {
-			if (typeof defaultStr !== 'undefined') {
-				if (typeof defaultStr === 'string') {
-					defaultStr = Array.prototype.slice.call(arguments, 1);
-				}
+			if (typeof defaultStr === 'string') {
+				defaultStr = Array.prototype.slice.call(arguments, 1);
 			}
 
 			defaultParams = key.defaultParams() && defaultStr
