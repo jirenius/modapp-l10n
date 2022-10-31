@@ -7,6 +7,7 @@ export default {
 	output: {
 		name: 'modapp-l10n',
 		format: 'umd',
+		exports: 'named',
 		globals: {
 			'modapp-eventbus': 'modapp-eventbus'
 		}

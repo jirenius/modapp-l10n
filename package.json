@@ -1,6 +1,6 @@
 {
   "name": "modapp-l10n",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Localization utility implementing modapp's LocaleString interface.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -30,18 +30,18 @@
   "license": "MIT",
   "homepage": "https://github.com/jirenius/modapp-l10n",
   "devDependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@rollup/plugin-babel": "^5.2.1",
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@rollup/plugin-babel": "^5.3.1",
     "cross-env": "^7.0.2",
     "eslint": "^7.13.0",
     "jsdoc-to-markdown": "^6.0.1",
     "rimraf": "^3.0.2",
-    "rollup": "^2.33.1",
+    "rollup": "^2.79.1",
     "rollup-plugin-terser": "^6.1.0"
   },
   "dependencies": {
-    "modapp-eventbus": "^1.7.0"
+    "modapp-eventbus": "^1.8.0"
   }
 }
