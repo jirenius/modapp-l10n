@@ -6,7 +6,7 @@ import LocaleStr from './LocaleStr.js';
 class L10n {
 
 	constructor(eventBus, namespace) {
-		this._ns = namespace ? '' : namespace + '.';
+		this._ns = namespace ? namespace + '.' : '';
 
 		this._eventBus = eventBus;
 		this._locale = 'en';

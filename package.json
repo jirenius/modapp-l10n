@@ -1,6 +1,6 @@
 {
   "name": "modapp-l10n",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Localization utility implementing modapp's LocaleString interface.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -36,12 +36,12 @@
     "@rollup/plugin-babel": "^5.3.1",
     "cross-env": "^7.0.2",
     "eslint": "^7.13.0",
-    "jsdoc-to-markdown": "^6.0.1",
+    "jsdoc-to-markdown": "^8.0.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.79.1",
     "rollup-plugin-terser": "^6.1.0"
   },
   "dependencies": {
-    "modapp-eventbus": "^1.8.0"
+    "modapp-eventbus": "^1.8.1"
   }
 }
