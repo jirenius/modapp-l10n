@@ -1,6 +1,6 @@
 {
   "name": "modapp-l10n",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "Localization utility implementing modapp's LocaleString interface.",
   "main": "lib/index.js",
   "module": "es/index.js",
